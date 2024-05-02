@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
     Type-annotated function element_length that takes a list lst of strings
     and returns a list of integers representing the lengths of the strings.

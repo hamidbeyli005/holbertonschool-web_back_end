@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
     Type-annotated function define_variables that takes no arguments.
     Returns three variables with specified values.
