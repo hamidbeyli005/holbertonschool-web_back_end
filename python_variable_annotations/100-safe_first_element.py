@@ -3,12 +3,13 @@
     Type-annotated function safe_first_element that takes a sequence
     seq of any type and returns its first element.
 """
-from typing import Sequence, Optional, Any
+from typing import Any, Sequence, Union
 
 
-def safe_first_element(seq: Sequence[Any]) -> Optional[Any]:
-    """Return the first element of the sequence or None if empty."""
-    if seq:
-        return seq[0]
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
+    """ Gets first element safely.
+    """
+    if lst:
+        return lst[0]
     else:
         return None
