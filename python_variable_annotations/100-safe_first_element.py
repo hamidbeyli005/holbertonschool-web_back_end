@@ -6,7 +6,7 @@
 from typing import Any, Sequence, Optional
 
 
-def safe_first_element(lst: Sequence[Any]) -> Optional[Any]:
+def safe_first_element(lst: Sequence) -> Optional[Any]:
     """ Gets first element safely.
     """
     if lst:
