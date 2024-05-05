@@ -3,9 +3,14 @@
     Type-annotated function type_checking that takes a variable x,
     and returns the type of x.
 """
-from typing import Union, Tuple, List, Any
+
+from typing import Tuple, List
 
 
-def type_checking(var: Any) -> Tuple[Union[str, List[str]], Any]:
-    """Return the type of the variable."""
-    return (str(type(var)), var)
+def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
+    """ Zooms in a list by a factor of 2."""
+    zoomed_in: List[int] = [
+        item for item in lst
+        for _ in range(factor)
+    ]
+    return zoomed_in
