@@ -7,7 +7,7 @@
 from typing import Tuple, List
 
 
-def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """ Zooms in a list by a factor of 2."""
     zoomed_in: List[int] = [
         item for item in lst
