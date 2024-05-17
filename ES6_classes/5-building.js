@@ -18,6 +18,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    return `Everyone inside! Get out of the ${this.constructor.name}!`;
+    return `Class extending Building must override evacuationWarningMessage`;
   }
 }
